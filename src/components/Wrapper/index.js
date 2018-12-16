@@ -41,6 +41,21 @@ function Wrapper(props) {
       <li>
         <div className="hex"></div>
       </li>
+      <li>
+        <div className="hex"></div>
+      </li>
+      <li>
+        <div className="hex"></div>
+      </li>
+      <li>
+        <div className="hex"></div>
+      </li>
+      <li>
+        <div className="hex"></div>
+      </li>
+      <li>
+        <div className="hex"></div>
+      </li>
     </ul>
 
   </div>;

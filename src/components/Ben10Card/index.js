@@ -1,11 +1,13 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function Ben10Card(props) {
   return (
     <div className="card">
       <div className="img-container">
+        <span onClick={() => props.selectAlias(props.id)}>
         <img alt={props.name} src={props.image} />
+        </span>
       </div>
       {/* <div className="content">
         <ul>
@@ -25,4 +27,4 @@ function FriendCard(props) {
   );
 }
 
-export default FriendCard;
+export default Ben10Card;
