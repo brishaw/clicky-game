@@ -4,7 +4,7 @@ import "./style.css";
 function Wrapper(props) {
   return <div className="wrapper">{props.children}
   
-    <ul id="grid" className="clear">
+    {/* <ul id="grid" className="clear">
       <li>
         <div className="hex"></div>
       </li>
@@ -56,7 +56,7 @@ function Wrapper(props) {
       <li>
         <div className="hex"></div>
       </li>
-    </ul>
+    </ul> */}
 
   </div>;
 }

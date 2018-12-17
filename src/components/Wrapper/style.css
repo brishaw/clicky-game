@@ -8,6 +8,7 @@
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+  background-image: url("/images/bg_t1.png");
 }
 
 #grid {

@@ -9,20 +9,6 @@ function Ben10Card(props) {
         <img alt={props.name} src={props.image} />
         </span>
       </div>
-      {/* <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Occupation:</strong> {props.occupation}
-          </li>
-          <li>
-            <strong>Location:</strong> {props.location}
-          </li>
-        </ul>
-      </div> */}
-      <span onClick={() => props.removeFriend(props.id)} className=""></span>
     </div>
   );
 }
