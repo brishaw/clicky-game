@@ -5,3 +5,15 @@
 .navbar-ben {
   color: #ffffff;
 }
+
+.desc-normal {
+    color: #fff;
+}
+
+.desc-correct {
+    color: #0f0;
+}
+
+.desc-incorrect {
+    color: #f00;
+}

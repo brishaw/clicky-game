@@ -12,6 +12,15 @@ function Title(props) {
           <li className="nav-item nav-link dir">
            Click on a character and earn points, but don't click anyone twice!
           </li>
+          <li
+            className={props.message.indexOf('Wrong') !== -1 ?
+              "desc-incorrect" :
+              props.message.indexOf('Correct') !== -1 ?
+                "desc-correct" :
+                "desc-normal"}
+          >
+            {props.message}
+          </li>
           <li className="nav-item nav-link score-cap">
             Score:
           </li>

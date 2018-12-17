@@ -7,15 +7,22 @@ import alias from "./alias.json";
 class App extends Component {
   // Setting this.state.alias to the alias json array
   state = {
+    message: "Time to begin!",
     alias:alias,
     unselectedAlias: alias,
     curScore: 0,
     highScore: 0
   };
 
+  
+
+  componentDidMount() {
+
+  }
+
   mixArray = array => {
-    for (let i = array.length -1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i +1));
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
@@ -25,7 +32,7 @@ class App extends Component {
 
     if (findAlias === undefined) {
       this.setState({
-        message: "Wrong",
+        message: "You Guessed Wrong",
         highScore: (this.state.curScore > this.state.highScore) ? this.state.curScore : this.state.highScore,
         curScore: 0,
         alias: alias,
@@ -36,11 +43,12 @@ class App extends Component {
       const newAlias = this.state.unselectedAlias.filter(item => item.id !== id);
 
       this.setState({
-        message: "Correct",
+        message: "You Guessed Correct",
         curScore: this.state.curScore + 1,
         alias: alias,
         unselectedAlias: newAlias
       });
+      console.log(this);
     }
     this.mixArray(alias);
   };
@@ -61,9 +69,11 @@ class App extends Component {
     return (
       <div>
       <Title 
+          message={this.state.message}
           curScore={this.state.curScore}
           highScore={this.state.highScore}
       />
+      
       <Wrapper>
         
         {this.state.alias.map(alias => (
