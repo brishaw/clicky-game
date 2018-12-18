@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Ben10Card from "./components/Ben10Card";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+import Audio from "./components/Audio";
 import alias from "./alias.json";
 
 class App extends Component {
@@ -73,9 +74,9 @@ class App extends Component {
           curScore={this.state.curScore}
           highScore={this.state.highScore}
       />
-      
+      <Audio />
       <Wrapper>
-        
+          
         {this.state.alias.map(alias => (
           <Ben10Card
             removeFriend={this.removeFriend}

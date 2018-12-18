@@ -4,7 +4,7 @@ import "./style.css";
 function Title(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-ben bg-black">
-      <span className="navbar-brand">Ben 10!</span>
+      <div className="navbar-brand logo"></div>
       
 
       <div id="navbarSupportedContent">
@@ -14,7 +14,7 @@ function Title(props) {
           </li>
           <li
             className={props.message.indexOf('Wrong') !== -1 ?
-              "desc-incorrect message style_prevu_kit_ex " :
+              "desc-incorrect message style_prevu_kit_ex rbg" :
               props.message.indexOf('Correct') !== -1 ?
                 "desc-correct message" :
                 "desc-normal message"}

@@ -4,6 +4,16 @@
 
 .navbar-ben {
   color: #ffffff;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  border-bottom: 1px solid green;
+      padding: 10px 70px;
+}
+
+.message {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
 }
 
 .desc-normal {
@@ -19,5 +29,21 @@
 }
 
 .navbar-ben ul li.message {
-  padding: .5rem 1rem;
+  padding: 0 1rem;
+  line-height: 45px;
 }
+
+.logo {
+  background-image: url("Ben_logo.png");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  filter: drop-shadow(0px 0px 7px green);
+  -webkit-filter: drop-shadow(0px 0px 7px green);
+  -moz-filter: drop-shadow(0px 0px 7px green);
+  -o-filter: drop-shadow(0px 0px 7px green);
+  -ms-filter: drop-shadow(0px 0px 7px green);
+  
+}
+
