@@ -14,10 +14,10 @@ function Title(props) {
           </li>
           <li
             className={props.message.indexOf('Wrong') !== -1 ?
-              "desc-incorrect" :
+              "desc-incorrect message" :
               props.message.indexOf('Correct') !== -1 ?
-                "desc-correct" :
-                "desc-normal"}
+                "desc-correct message" :
+                "desc-normal message"}
           >
             {props.message}
           </li>

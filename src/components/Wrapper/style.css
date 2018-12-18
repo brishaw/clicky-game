@@ -9,6 +9,7 @@
   align-content: flex-start;
   overflow: auto;
   background-image: url("/images/bg_t1.png");
+  background-attachment: fixed;
 }
 
 #grid {

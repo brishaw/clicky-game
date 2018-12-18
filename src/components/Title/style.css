@@ -17,3 +17,7 @@
 .desc-incorrect {
     color: #f00;
 }
+
+.navbar-ben ul li.message {
+  padding: .5rem 1rem;
+}
