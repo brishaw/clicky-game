@@ -14,7 +14,15 @@
   height: 100%;
   /*overflow: hidden;*/
   text-align: center;
-  background:#202223;
+  
+  background: repeating-linear-gradient(
+  45deg,
+  #2c2e30,
+  #2c2e30 10px,
+  #202223 10px,
+  #202223 20px);
+  background-color:#202223;
+
 }
 .card > .img-container > span > img {
   width: 100%

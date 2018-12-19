@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Audio from "./components/Audio";
 import alias from "./alias.json";
+import "./style.css";
 
 class App extends Component {
   // Setting this.state.alias to the alias json array
