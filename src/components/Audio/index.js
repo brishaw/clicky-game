@@ -1,11 +1,11 @@
-import React from "react";
-import "./style.css";
+import React from 'react'
+import "./style.css"
 
 class AudioPlayer extends React.Component {
   render() {
     return (
       <div>
-        <audio className="player" ref="audio_tag" src="/audio/Ben-10-theme-songs.mp3" controls />
+        <audio ref="audio_tag" src="/audio/ben_theme_1.mp3" controls autoPlay />
       </div>
     );
   }
