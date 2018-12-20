@@ -16,8 +16,6 @@ class App extends Component {
     highScore: 0
   };
 
-  
-
   componentDidMount() {
 
   }
@@ -26,6 +24,15 @@ class App extends Component {
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  winner() {
+    const checkScore = this.state.curScore;
+    if(checkScore === 23) {
+      console.log("winner");
+    } else {
+      console.log("no winner yet")
     }
   }
 
@@ -53,18 +60,8 @@ class App extends Component {
       console.log(this);
     }
     this.mixArray(alias);
+    this.winner();
   };
-
-  removeFriend = id => {
-    // Filter this.state.alias for alias with an id not equal to the id being removed
-    const alias = this.state.alias.filter(alias => alias.id !== id);
-    // Set this.state.alias equal to the new alias array
-    this.setState({ alias });
-  };
-
-
-
-
 
   // Map over this.state.alias and render a Ben10Card component for each friend object
   render() {
@@ -80,7 +77,6 @@ class App extends Component {
           
         {this.state.alias.map(alias => (
           <Ben10Card
-            removeFriend={this.removeFriend}
             id={alias.id}
             key={alias.id}
             name={alias.name}

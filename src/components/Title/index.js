@@ -13,11 +13,11 @@ function Title(props) {
            Click on a character and earn points, but don't click anyone twice!
           </li>
           <li
-            className={props.message.indexOf('Wrong') !== -1 ?
+            className={ props.message.indexOf('Wrong') !== -1 ?
               "wrong message wiggle_and" :
               props.message.indexOf('Correct') !== -1 ?
-                "correct message" :
-                "message"}
+                "correct message" : "message"
+            }
           >
             {props.message}
           </li>
