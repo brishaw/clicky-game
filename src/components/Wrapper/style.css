@@ -1,5 +1,4 @@
 .wrapper {
-  background: #000000;
   height: auto;
   display: flex;
   flex-flow: row wrap;
@@ -7,13 +6,11 @@
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
-  background-image: url("bg_t1.png");
-  background-attachment: fixed;
 }
 
 .wrapper-spacer {
   width: 100%;
-  padding-top: 170px;
+  padding-top: 70px;
 }
 
 

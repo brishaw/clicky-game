@@ -1,0 +1,88 @@
+.audio-controller {
+  padding-top: 130px;
+}
+
+#audio_player, .info, .error, input {
+  display: inline;
+}
+
+.info {
+    background-color: aqua;     
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
+
+body { 
+  font-family: Verdana, Geneva, sans-serif; 
+  background-color: lightgray;
+  margin-top: 30px;
+  text-align: center;
+}
+
+p { font-size: 0.9em; }
+
+h1 { 
+  font-size:20px;
+  color:#333;
+}
+
+#audio_player {
+
+
+}
+
+button {
+  border:none;
+  cursor:pointer;
+  background: transparent;
+  margin-top: 20px;
+}
+
+.pause { background-position:-19px 0; }
+
+.stop { background-position:-38px 0; }
+
+.volume {
+font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  color: rgb(0, 167, 0);
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  }
+
+  .volume_on {
+    background-image: url("baseline_volume_up_black_48dp.png");
+    height: 100px;
+    width: 100px;
+    text-indent: -9999px;
+    background-color: green;
+  }
+
+  .volume_off {
+    background-image: url("baseline_volume_off_black_48dp.png");
+    height: 100px;
+    width: 100px;
+    text-indent: -9999px;
+    background-color: green;
+  }
